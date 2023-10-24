@@ -13,15 +13,32 @@ const images = [
   },
 ];
 
-const pictures = document.querySelector(".gallery");
+// const pictures = document.querySelector(".gallery");
 
-let galleries = "";
-images.forEach(({ url, alt }) => {
-  galleries += `<li>
-  <img src ="${url}"
-  width = "250"
-  alt = "${alt}"/>
-  </li>`;
+// let galleries = "";
+// images.forEach(({ url, alt }) => {
+//   galleries += `<li>
+  // <img src ="${url}"
+  // width = "250"
+  // alt = "${alt}"/>
+//   </li>`;
+// });
+// pictures.insertAdjacentHTML("afterbegin", galleries);
+
+
+
+const gallery = document.querySelector('.gallery');
+
+const imageArray = images.map(({ url, alt }) => {
+  const imageElement = document.createElement('li');
+  imageElement.insertAdjacentHTML('afterbegin', `
+  <img src="${url}"
+    width="250"
+    alt="${alt}"
+  />
+  `);
+  return imageElement;
 });
-pictures.insertAdjacentHTML("afterbegin", galleries);
+
+gallery.append(...imageArray);
 
