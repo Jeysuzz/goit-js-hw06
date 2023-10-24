@@ -10,8 +10,6 @@
 
 // });
 
-// const categoriesElements = document.querySelectorAll (".item");
-// console.log ("Number of categories: ", categoriesElements.length);
 
 const categoriesElements = document.querySelectorAll(`.item`);
 console.log ("Number of Categories: ", categoriesElements.length);
