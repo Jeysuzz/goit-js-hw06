@@ -13,20 +13,6 @@ const images = [
   },
 ];
 
-// const pictures = document.querySelector(".gallery");
-
-// let galleries = "";
-// images.forEach(({ url, alt }) => {
-//   galleries += `<li>
-  // <img src ="${url}"
-  // width = "250"
-  // alt = "${alt}"/>
-//   </li>`;
-// });
-// pictures.insertAdjacentHTML("afterbegin", galleries);
-
-
-
 const gallery = document.querySelector('.gallery');
 
 const imageArray = images.map(({ url, alt }) => {

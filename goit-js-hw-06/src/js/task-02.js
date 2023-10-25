@@ -7,7 +7,7 @@ const ingredients = [
   'Condiments',
 ];
 
-
+//From sir Marvin's answer
 // const ingredientsList = document.querySelector("#ingredients");
 
 // ingredientsList.insertAdjacentHTML('beforebegin', '<h1>Ingredients</h1>');
